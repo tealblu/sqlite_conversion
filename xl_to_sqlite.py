@@ -234,7 +234,7 @@ def main():
     
     # If password not provided, use the one from the C# code
     if args.password is None:
-        encoded_password = "VmVwYSoxNy4wNS4xOTkz"  # From the C# code
+        encoded_password = ""  # From the C# code
         args.password = base64.b64decode(encoded_password).decode('utf-8')
     
     process_excel_files(args.data_dir, args.output, args.password)
